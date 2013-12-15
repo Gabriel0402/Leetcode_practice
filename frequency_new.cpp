@@ -1,15 +1,5 @@
 #include <iostream>
 #include <map>
-
-
-/*
-*
-*
-*
-*
-*
-*
-*/
 using namespace std;
 class Solution{
    public:
@@ -43,10 +33,8 @@ class Solution{
 		return array[index];
 	}
 };
-
-using namespace std;
 int main(int argc, char *argv[]) {
-	int array[11]={1,2,3,4,4,5,6,7,8,9,10};
+	int array[11]={1,10,10,10,10,10,10,10,10,10,11};
 	Solution a;
 	//cout<<sizeof(array)/sizeof(int)<<endl;
 	cout<<a.find_frequency(array,sizeof(array)/sizeof(int))<<endl;

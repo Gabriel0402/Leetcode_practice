@@ -24,8 +24,8 @@ int main(int argc, char *argv[]) {
 	list<int> a;
 	list<int> b;
 	list<int> c;
-	int a_temp[]={4, 2, 73, 11, -5};
-	int b_temp[]={-5, 73, -1, 9, 9, 4, 7};
+	int a_temp[]={4, 2, 73, 11, -5,-8};
+	int b_temp[]={-5, 73, -1, 9, 9, -8 ,4, 7};
 	a.assign(a_temp,a_temp+5);
 	b.assign(b_temp,b_temp+7);
 	get_intersection(a,b,c);
