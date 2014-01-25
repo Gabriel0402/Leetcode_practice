@@ -6,6 +6,7 @@ class Solution {
 public:
     vector<int> grayCode(int n) {
 			int size=1;
+			vector<int> result;
 			while (n--) {
 				size*=2;
 			}
@@ -13,11 +14,9 @@ public:
 			{
 				result.push_back((i>>1)^i);
 			}
-        
+        return result;
     }
 };
-
-
 int main(int argc, char *argv[]) {
 	
 }
