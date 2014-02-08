@@ -5,18 +5,23 @@ using namespace std;
 class Solution {
 public:
     int uniquePaths(int m, int n) {
-        int result;
-		  if (m==0) return uniquePaths(m,n-1);
-		  if (n==0) return uniquePaths(m-1,n);
-		  return uniquePaths(m-1,n)+uniquePaths(m,n-1);
+        int *A=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            A[i]=1;
+        }
+        for(int i=1;i<m;i++)
+        {
+            for(int j=1;j<n;j++)
+            {
+                A[j]+=A[j-1];
+            }
+        }
+        return A[n-1];
+        
     }
 };
 
-
 int main(int argc, char *argv[]) {
-	int m=3;
-	int n=7;
-	Solution sol;
-	cout<<sol.uniquePaths(m,n)<<endl;
 	
 }
